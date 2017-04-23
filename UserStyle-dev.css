@@ -1,0 +1,125 @@
+.drawer__inner,
+.ui {
+    background-color: #4E342E;
+}
+.scrollable ,
+.drawer__inner.darker,
+.search-results__section *,
+.tabs-bar__link:hover,
+.drawer__header>a:hover,
+.drawer__header>a:hover *,
+.empty-column-indicator {
+    background-color: #FFF59D !important;
+    color: #222 !important;
+}
+.scrollable *:not(.fa){
+    background-color: #FFF59D;
+    color: #222;
+}
+.account__header div *:not(.account__header__avatar),
+.account__header span,
+.account__header__content,
+.account__header .fa,
+.muted a.status__content__spoiler-link,
+.status__content__spoiler-link:hover >span,
+.drawer__tab > .fa,
+.drawer__tab:hover > .fa  {
+    background: rgba(0, 0, 0, 0) !important;
+}
+.account__header>div {
+    background: rgba(245, 245, 255, 0.7)!important;
+}
+.account__header *{
+    color: #222 !important;
+}
+.status__content a,
+.status__content a>span,
+span.ellipsis,
+.active,
+.search__icon * {
+    color: #EC407A !important;
+}
+.tabs-bar__link.active{
+    border-color: #EC407A ;
+}
+.compose-form__buttons .active{
+    background-color: #282c37;
+}
+.button{
+    background-color: #EC407A;
+    opacity: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+.button:hover{
+    background-color: #EC407A;
+    opacity: 0.8;
+}
+.search *,
+.compose-form__buttons .active {
+    border-radius: 0.4em;
+}
+.search__input,
+.search__input:focus,
+.compose-form__buttons,
+.autosuggest-textarea__textarea,
+.compose-form__modifiers {
+    background-color: #F5F5FF;
+}
+.column-header,
+.column-icon,
+.tabs-bar,
+.drawer__header,
+.drawer__header *,
+.column-back-button,
+.search-results__header {
+    background-color: #2E7D32;
+    color: #FFF;
+}
+.status__content__spoiler-link *:hover {
+  color: #FFF;
+}
+.status__content__spoiler-link:hover >span {
+    color: #fff !important;
+}
+.getting-started{
+    background-size:100% auto !important;
+}
+.dropdown__content>ul,
+.dropdown__content>ul *{
+	width:25vw !important;
+}
+@media (max-width:1024px) {
+    .dropdown__content>ul,
+    .dropdown__content>ul *{
+	    width:50vw !important;
+    }
+}
+@media (max-width:500px) {
+    .dropdown__content>ul,
+    .dropdown__content>ul *{
+	    width:90vw !important;
+    }
+}
+@media (min-height:736px) {
+  .autosuggest-textarea__textarea{
+    height: 400px;
+  }
+}
+@media (min-width:1025px) {
+    .drawer{
+        width:20%;
+    	max-width:400px;
+    }
+    .column {
+        width: calc(80%/3);
+        max-width: 800px;
+    }
+}
+@media (min-width:2560px) {
+    .drawer, .column {
+        margin: 0;
+        height: 100vh;
+    }
+}

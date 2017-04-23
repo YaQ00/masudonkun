@@ -1,0 +1,174 @@
+@import 'application';
+
+/*
+ * Mastodon custom.scss "Masdon-kun" created by yaq00
+ * scss convert by d6rkaiz
+*/
+
+$tab_color: #2F3442;
+$bg_color: #f5f5ff;
+$link_color: #2b90d9;
+$font_color: #222;
+$ui_color: #444B5D;
+
+.drawer__inner, .ui {
+  background-color: $ui_color;
+}
+
+.scrollable, .drawer__inner.darker, .search-results__section *, .tabs-bar__link:hover, .empty-column-indicator {
+  background-color: $bg_color !important;
+  color: $font_color !important;
+}
+
+.drawer__header > a:hover {
+  background-color: $bg_color !important;
+  color: $font_color !important;
+  * {
+    background-color: $bg_color !important;
+    color: $font_color !important;
+  }
+}
+
+.scrollable *:not(.fa) {
+  background-color: $bg_color;
+  color: $font_color;
+}
+
+.account__header {
+  div *:not(.account__header__avatar), span {
+    background: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+.account__header__content, .account__header .fa, .muted a.status__content__spoiler-link, .status__content__spoiler-link:hover > span {
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+.drawer__tab {
+  > .fa, &:hover > .fa {
+    background: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+.account__header {
+  > div {
+    background: rgba($color5, 0.7) !important;
+  }
+  * {
+    color: $color8 !important;
+  }
+}
+
+.status__content a {
+  color: $link_color !important;
+  > span {
+    color: $link_color !important;
+  }
+}
+
+span.ellipsis, .active, .search__icon * {
+  color: $link_color !important;
+}
+
+.tabs-bar__link.active {
+  border-color: $link_color;
+}
+
+.compose-form__buttons .active {
+  background-color: #282c37;
+}
+
+.button {
+  background-color: darken( $link_color, 10% );
+  opacity: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  &:hover {
+    background-color: darken( $link_color, 15% );
+  }
+}
+
+.search *, .compose-form__buttons .active {
+  border-radius: 0.4em;
+}
+
+.compose-form__buttons{
+  background-color: darken($bg_color, 2% );
+}
+
+.compose-form__modifiers, .autosuggest-textarea__textarea, .spoiler-input, .search__input{
+  background-color: $bg_color;
+  &:focus {
+    background-color: $bg_color;
+  }
+}
+
+.column-header, .column-icon, .tabs-bar, .column-back-button, .search-results__header  {
+  background-color: $tab_color;
+  color: $color5;
+}
+
+.drawer__header {
+  background-color: $tab_color;
+  color: $color5;
+  * {
+    background-color: $tab_color;
+    color: $color5;
+  }
+}
+
+.status__content__spoiler-link *:hover {
+	color: $color5;
+}
+
+.status__content__spoiler-link:hover > span {
+  color: $color5 !important;
+}
+
+.getting-started{
+    background-size:100% auto !important;
+}
+
+.dropdown__content > ul {
+  width: 25vw !important;
+  * {
+    width: 25vw !important;
+  }
+	@media (max-width: 1024px) {
+		width: 50vw !important;
+		* {
+			width: 50vw !important;
+		}
+	}
+	@media (max-width: 500px) {
+		width: 90vw !important;
+		* {
+			width: 90vw !important;
+		}
+	}
+}
+
+@media (min-height:736px) {
+    .autosuggest-textarea__textarea{
+        height: 400px;
+    }
+}
+
+@media (min-width: 1025px) {
+  .drawer {
+    width: 20%;
+    max-width: 400px;
+  }
+  .column {
+    width: calc(80%/3);
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .drawer, .column {
+    margin: 0;
+    height: 100vh;
+  }
+}
