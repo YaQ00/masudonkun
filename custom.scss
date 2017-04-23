@@ -149,12 +149,6 @@ span.ellipsis, .active, .search__icon * {
 	}
 }
 
-@media (min-height:736px) {
-    .autosuggest-textarea__textarea{
-        height: 400px;
-    }
-}
-
 @media (min-width: 1025px) {
   .drawer {
     width: 20%;
