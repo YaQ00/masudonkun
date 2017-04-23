@@ -119,7 +119,7 @@ span.ellipsis, .active, .search__icon * {
 }
 
 .status__content__spoiler-link *:hover {
-	color: $color5;
+  color: $color5;
 }
 
 .status__content__spoiler-link:hover > span {
@@ -127,7 +127,7 @@ span.ellipsis, .active, .search__icon * {
 }
 
 .getting-started{
-    background-size:100% auto !important;
+  background-size:100% auto !important;
 }
 
 .dropdown__content > ul {
@@ -135,24 +135,24 @@ span.ellipsis, .active, .search__icon * {
   * {
     width: 25vw !important;
   }
-	@media (max-width: 1024px) {
-		width: 50vw !important;
-		* {
-			width: 50vw !important;
-		}
-	}
-	@media (max-width: 500px) {
-		width: 90vw !important;
-		* {
-			width: 90vw !important;
-		}
-	}
+  @media (max-width: 1024px) {
+    width: 50vw !important;
+    * {
+      width: 50vw !important;
+    }
+  }
+  @media (max-width: 500px) {
+    width: 90vw !important;
+    * {
+      width: 90vw !important;
+    }
+  }
 }
 
 @media (min-height:736px) {
-    .autosuggest-textarea__textarea{
-        height: 400px;
-    }
+  .autosuggest-textarea__textarea{
+    height: 400px;
+  }
 }
 
 @media (min-width: 1025px) {
