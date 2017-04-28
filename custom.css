@@ -1,0 +1,125 @@
+/*
+ * Mastodon custom.scss "Masdon-kun" created by yaq00
+ * scss convert by d6rkaiz
+*/
+.drawer__inner, .ui {
+  background-color: #444B5D; }
+
+.scrollable, .drawer__inner.darker, .search-results__section *, .tabs-bar__link:hover, .empty-column-indicator {
+  background-color: #f5f5ff !important;
+  color: #222 !important; }
+
+.drawer__header > a:hover {
+  background-color: #f5f5ff !important;
+  color: #222 !important; }
+  .drawer__header > a:hover * {
+    background-color: #f5f5ff !important;
+    color: #222 !important; }
+
+.scrollable *:not(.fa) {
+  background-color: #f5f5ff;
+  color: #222; }
+
+.account__header div *:not(.account__header__avatar), .account__header span {
+  background: transparent !important; }
+
+.account__header__content, .account__header .fa, .muted a.status__content__spoiler-link, .status__content__spoiler-link:hover > span {
+  background: transparent !important; }
+
+.drawer__tab > .fa, .drawer__tab:hover > .fa {
+  background: transparent !important; }
+
+.account__header > div {
+  background: rgba(255, 255, 255, 0.7) !important; }
+.account__header * {
+  color: #000000 !important; }
+
+.status__content a {
+  color: #2b90d9 !important; }
+  .status__content a > span {
+    color: #2b90d9 !important; }
+
+span.ellipsis, .active, .search__icon * {
+  color: #2b90d9 !important; }
+
+.tabs-bar__link.active {
+  border-color: #2b90d9; }
+
+.compose-form__buttons .active {
+  background-color: #282c37; }
+
+.button {
+  background-color: #2074b1;
+  opacity: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip; }
+  .button:hover {
+    background-color: #1c669c; }
+
+.search *, .compose-form__buttons .active {
+  border-radius: 0.4em; }
+
+.compose-form__buttons {
+  background-color: #ebebff; }
+
+.compose-form__modifiers, .autosuggest-textarea__textarea, .spoiler-input, .search__input {
+  background-color: #f5f5ff; }
+  .compose-form__modifiers:focus, .autosuggest-textarea__textarea:focus, .spoiler-input:focus, .search__input:focus {
+    background-color: #f5f5ff; }
+
+.column-header, .column-icon, .tabs-bar, .column-back-button, .search-results__header {
+  background-color: #2F3442;
+  color: #ffffff; }
+
+.drawer__header {
+  background-color: #2F3442;
+  color: #ffffff; }
+  .drawer__header * {
+    background-color: #2F3442;
+    color: #ffffff; }
+
+.status__content__spoiler-link *:hover {
+  color: #ffffff; }
+
+.status__content__spoiler-link:hover > span {
+  color: #ffffff !important; }
+
+.getting-started {
+  background-size: 100% auto !important; }
+
+.dropdown__content > ul {
+  width: 25vw !important; }
+  .dropdown__content > ul * {
+    width: 25vw !important; }
+  @media (max-width: 1024px) {
+    .dropdown__content > ul {
+      width: 50vw !important; }
+      .dropdown__content > ul * {
+        width: 50vw !important; } }
+  @media (max-width: 500px) {
+    .dropdown__content > ul {
+      width: 90vw !important; }
+      .dropdown__content > ul * {
+        width: 90vw !important; } }
+
+@media (min-width: 1025px) {
+  .drawer {
+    width: 20%;
+    max-width: 400px; }
+
+  .columns-area > div > .column {
+    position: absolute;
+    max-width: 800px;
+    height: 100vh; }
+
+  .columns-area > .column {
+    width: calc(80%/3);
+    max-width: 800px; }
+
+  .column {
+    width: auto; } }
+@media (min-width: 2560px) {
+  .drawer, .column {
+    margin: 0;
+    height: 100vh; } }
