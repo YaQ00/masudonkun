@@ -151,19 +151,20 @@ span.ellipsis, .active, .search__icon * {
 @media (min-width:1025px) {
   .drawer{
     width:19vw;
-  	max-width:400px;
+    max-width:400px;
+    height: 100vh;
   }
   .columns-area>div .column{
     width:27vw !important;
-    max-width: 800px;
-    height:100vh;
   }
   .columns-area>.column{
     width: 27vw;
+  }
+  .column{
     max-width: 800px;
+    height:100vh;
   }
 }
-
 @media (min-width: 2560px) {
   .drawer, .column {
     margin: 0;
